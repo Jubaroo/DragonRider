@@ -1,7 +1,7 @@
 # Dragon Rider
 
-- Allows breedable, rideable, tameable Drakes to be enabled in Wurm.
-- Many Drake settings can be customized to fit your needs.
+- Allows breedable, rideable, tameable Drakes and Basalisks to be enabled in Wurm.
+- Many settings can be customized to fit your needs.
 - Detailed instructions on the configuration settings can be found in the DrakeMountMod.properties file.
 - Example properties file can be found [HERE](https://github.com/Jubaroo/DrakeMountMod/blob/master/DrakeMountMod.properties)
 - List of item ID's for Items_Butchered can be found [HERE](https://pastebin.com/MM53gSJA)
