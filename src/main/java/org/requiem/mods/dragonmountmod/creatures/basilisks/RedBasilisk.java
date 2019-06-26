@@ -1,19 +1,22 @@
 package org.requiem.mods.dragonmountmod.creatures.basilisks;
 
 import com.wurmonline.mesh.Tiles;
+import com.wurmonline.server.MiscConstants;
 import com.wurmonline.server.behaviours.Vehicle;
+import com.wurmonline.server.bodys.BodyTemplate;
 import com.wurmonline.server.creatures.Creature;
 import com.wurmonline.server.items.Item;
 import com.wurmonline.server.skills.SkillList;
 import com.wurmonline.shared.constants.CreatureTypes;
 import com.wurmonline.shared.constants.ItemMaterials;
+import com.wurmonline.shared.constants.ProtoConstants;
 import org.gotti.wurmunlimited.modsupport.CreatureTemplateBuilder;
 import org.gotti.wurmunlimited.modsupport.creatures.EncounterBuilder;
 import org.gotti.wurmunlimited.modsupport.creatures.ModCreature;
 import org.gotti.wurmunlimited.modsupport.vehicles.ModVehicleBehaviour;
 import org.gotti.wurmunlimited.modsupport.vehicles.VehicleFacade;
 
-import static org.requiem.mods.dragonmountmod.configurator.Constants.*;
+import static org.requiem.mods.dragonmountmod.Constants.*;
 
 public class RedBasilisk implements ModCreature, CreatureTypes {
     public static int templateId;
@@ -24,12 +27,12 @@ public class RedBasilisk implements ModCreature, CreatureTypes {
     public CreatureTemplateBuilder createCreateTemplateBuilder() {
         final int[] types = (RedBasiliskCreatureTypes);//0, 4, 9, 12, 14, 27, 30, 32, 41, 43, 62 int
         final CreatureTemplateBuilder builder = new CreatureTemplateBuilder(
-                "mod.creature.RedBasilisk", "Red Basilisk", RedBasiliskDesc/*This docile red basilisk looks happy as it sits ready to ride.*/,
-                "model.creature.basilisk.red",
-                types, (byte) 1,
+                "mod.creature.basilisk.red", "Red Basilisk", RedBasiliskDesc/*This docile red basilisk looks happy as it sits ready to ride.*/,
+                "model.creature.dragon.red",
+                types, BodyTemplate.TYPE_DRAGON,
                 (short) RedBasiliskVision/* 3 */,
-                (byte) 0,
-                (short) 180, (short) 50, (short) 250,
+                MiscConstants.SEX_MALE,
+                (short) 280, (short)210, (short)666,
                 "sound.death.dragon", "sound.death.dragon", "sound.combat.hit.dragon", "sound.combat.hit.dragon",
                 RedBasiliskNaturalArmour/* 1.0F */, RedBasiliskHandDamage/* 20.0F */, RedBasiliskKickDamage/* 26.0F */, RedBasiliskBiteDamage/* 56.0F */, RedBasiliskHeadDamage/* 58.0F */, RedBasiliskBreathDamage/* 0.0F */,
                 RedBasiliskMoveSpeed/* 4.0F */,
@@ -81,15 +84,15 @@ public class RedBasilisk implements ModCreature, CreatureTypes {
                 final VehicleFacade vehicle = this.wrap(v);
                 vehicle.createPassengerSeats(0);
                 vehicle.setSeatFightMod(0, 0.6F, 1.3F);
-                vehicle.setSeatOffset(0, 0.0F, 0.0F, RedBasiliskZaxisOffset);//-0.01F
+                vehicle.setSeatOffset(0, 0.0F, 0.0F, RedBasiliskZAxisOffset);//-0.01F
                 vehicle.setCreature(true);
                 vehicle.setSkillNeeded(RedBasiliskVehicleSkill);//35.0F
                 vehicle.setName(creature.getName());
                 vehicle.setMaxDepth(RedBasiliskVehicleDepth);//-0.7F
                 vehicle.setMaxHeightDiff(RedBasiliskSetMaxHeightDiff);
                 vehicle.setMaxSpeed(RedBasiliskVehicleSpeed);//80.0F
-                vehicle.setCommandType((byte) 3);
-                vehicle.setCanHaveEquipment(true);
+                vehicle.setCommandType(ProtoConstants.TELE_START_COMMAND_CREATURE);
+                vehicle.setCanHaveEquipment(false);
             }
         };
     }

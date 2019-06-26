@@ -1,11 +1,10 @@
-
-package org.requiem.mods.dragonmountmod;
+package org.requiem.mods.dragonmountmod.utilities;
 
 import com.wurmonline.server.creatures.CreatureTemplate;
 import com.wurmonline.server.creatures.CreatureTemplateFactory;
 import com.wurmonline.server.creatures.NoSuchCreatureTemplateException;
 import org.gotti.wurmunlimited.modloader.ReflectionUtil;
-import org.requiem.mods.dragonmountmod.configurator.Constants;
+import org.requiem.mods.dragonmountmod.Constants;
 import org.requiem.mods.dragonmountmod.creatures.basilisks.*;
 import org.requiem.mods.dragonmountmod.creatures.drakes.*;
 
@@ -25,12 +24,12 @@ public class CorpseModifier {
     public static void setTemplateVariables() {
         try {
             // Set corpse models
-            setCorpseModel(BlackDrake.templateId, "blackdrakehatchling.");
-            setCorpseModel(BlueDrake.templateId, "bluedrakehatchling.");
-            setCorpseModel(GreenDrake.templateId, "greendrakehatchling.");
-            setCorpseModel(RedDrake.templateId, "reddrakehatchling.");
-            setCorpseModel(SpectralDrake.templateId, Constants.GhostDrakeModelColor+"drakehatchling.");
-            setCorpseModel(WhiteDrake.templateId, "whitedrakehatchling.");
+            setCorpseModel(BlackDrake.templateId, "blackdragonhatchling.");
+            setCorpseModel(BlueDrake.templateId, "bluedragonhatchling.");
+            setCorpseModel(GreenDrake.templateId, "greendragonhatchling.");
+            setCorpseModel(RedDrake.templateId, "reddragonhatchling.");
+            setCorpseModel(SpectralDrake.templateId, Constants.GhostDrakeModelColor+"dragonhatchling.");
+            setCorpseModel(WhiteDrake.templateId, "whitedragonhatchling.");
             setCorpseModel(BlackBasilisk.templateId, "blackdragon.");
             setCorpseModel(BlueBasilisk.templateId, "bluedragon.");
             setCorpseModel(GreenBasilisk.templateId, "greendragon.");

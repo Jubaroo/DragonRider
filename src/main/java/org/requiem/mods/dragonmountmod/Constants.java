@@ -1,12 +1,12 @@
-package org.requiem.mods.dragonmountmod.configurator;
+package org.requiem.mods.dragonmountmod;
 
 import com.wurmonline.server.combat.ArmourTemplate.ArmourType;
 
 import static com.wurmonline.server.combat.ArmourTemplate.ARMOUR_TYPE_LEATHER_DRAGON;
 
 public class Constants {
-
     public static boolean DEBUG;
+    static String VERSION = "v1.5";
 
 //=======================================================================================    
 //======================================== DRAKES =======================================
@@ -44,7 +44,7 @@ public class Constants {
     public static float BlackDrakeBiteDamage;
     public static float BlackDrakeHeadDamage;
     public static float BlackDrakeBreathDamage;
-    public static float BlackDrakeZaxisOffset;
+    public static float BlackDrakeZAxisOffset;
     public static float BlackDrakeMoveSpeed;
     public static float BlackDrakeBodyStrength;
     public static float BlackDrakeBodyControl;
@@ -76,8 +76,8 @@ public class Constants {
      * Blue Drake
      */
     public static String BlueDrakeDesc;
-    public static String BlueDrakeKickDamString= "wingbuff";;
-    public static String BlueDrakeHeadbuttDamString = "tailwhip";;
+    public static String BlueDrakeKickDamString= "wingbuff";
+    public static String BlueDrakeHeadbuttDamString = "tailwhip";
 
     public static int[] BlueDrakeItemsButchered = new int[]{303,308,309,310,371,636};
     public static int[] BlueDrakeCombatMoves = new int[]{1,2,6};
@@ -102,7 +102,7 @@ public class Constants {
     public static float BlueDrakeBiteDamage;
     public static float BlueDrakeHeadDamage;
     public static float BlueDrakeBreathDamage;
-    public static float BlueDrakeZaxisOffset;
+    public static float BlueDrakeZAxisOffset;
     public static float BlueDrakeMoveSpeed;
     public static float BlueDrakeBodyStrength;
     public static float BlueDrakeBodyControl;
@@ -134,8 +134,8 @@ public class Constants {
      * Ghost Drake
      */
     public static String GhostDrakeDesc;
-    public static String GhostDrakeKickDamString= "wingbuff";;
-    public static String GhostDrakeHeadbuttDamString = "tailwhip";;
+    public static String GhostDrakeKickDamString= "wingbuff";
+    public static String GhostDrakeHeadbuttDamString = "tailwhip";
     public static String GhostDrakeModelColor;
 
     public static int[] GhostDrakeItemsButchered = new int[]{303,308,309,310,371,636};
@@ -161,7 +161,7 @@ public class Constants {
     public static float GhostDrakeBiteDamage;
     public static float GhostDrakeHeadDamage;
     public static float GhostDrakeBreathDamage;
-    public static float GhostDrakeZaxisOffset;
+    public static float GhostDrakeZAxisOffset;
     public static float GhostDrakeMoveSpeed;
     public static float GhostDrakeBodyStrength;
     public static float GhostDrakeBodyControl;
@@ -193,8 +193,8 @@ public class Constants {
      * Green Drake
      */
     public static String GreenDrakeDesc;
-    public static String GreenDrakeKickDamString= "wingbuff";;
-    public static String GreenDrakeHeadbuttDamString = "tailwhip";;
+    public static String GreenDrakeKickDamString= "wingbuff";
+    public static String GreenDrakeHeadbuttDamString = "tailwhip";
 
     public static int[] GreenDrakeItemsButchered = new int[]{303,308,309,310,371,636};
     public static int[] GreenDrakeCombatMoves = new int[]{1,2,6};
@@ -219,7 +219,7 @@ public class Constants {
     public static float GreenDrakeBiteDamage;
     public static float GreenDrakeHeadDamage;
     public static float GreenDrakeBreathDamage;
-    public static float GreenDrakeZaxisOffset;
+    public static float GreenDrakeZAxisOffset;
     public static float GreenDrakeMoveSpeed;
     public static float GreenDrakeBodyStrength;
     public static float GreenDrakeBodyControl;
@@ -251,8 +251,8 @@ public class Constants {
      * Red Drake
      */
     public static String RedDrakeDesc;
-    public static String RedDrakeKickDamString= "wingbuff";;
-    public static String RedDrakeHeadbuttDamString = "tailwhip";;
+    public static String RedDrakeKickDamString= "wingbuff";
+    public static String RedDrakeHeadbuttDamString = "tailwhip";
 
     public static int[] RedDrakeItemsButchered = new int[]{303,308,309,310,371,636};
     public static int[] RedDrakeCombatMoves = new int[]{1,2,6};
@@ -277,7 +277,7 @@ public class Constants {
     public static float RedDrakeBiteDamage;
     public static float RedDrakeHeadDamage;
     public static float RedDrakeBreathDamage;
-    public static float RedDrakeZaxisOffset;
+    public static float RedDrakeZAxisOffset;
     public static float RedDrakeMoveSpeed;
     public static float RedDrakeBodyStrength;
     public static float RedDrakeBodyControl;
@@ -309,8 +309,8 @@ public class Constants {
      * White Drake
      */
     public static String WhiteDrakeDesc;
-    public static String WhiteDrakeKickDamString= "wingbuff";;
-    public static String WhiteDrakeHeadbuttDamString = "tailwhip";;
+    public static String WhiteDrakeKickDamString= "wingbuff";
+    public static String WhiteDrakeHeadbuttDamString = "tailwhip";
 
     public static int[] WhiteDrakeItemsButchered = new int[]{303,308,309,310,371,636};
     public static int[] WhiteDrakeCombatMoves = new int[]{1,2,6};
@@ -335,7 +335,7 @@ public class Constants {
     public static float WhiteDrakeBiteDamage;
     public static float WhiteDrakeHeadDamage;
     public static float WhiteDrakeBreathDamage;
-    public static float WhiteDrakeZaxisOffset;
+    public static float WhiteDrakeZAxisOffset;
     public static float WhiteDrakeMoveSpeed;
     public static float WhiteDrakeBodyStrength;
     public static float WhiteDrakeBodyControl;
@@ -373,25 +373,25 @@ public class Constants {
     /**
      * Black Basilisk
      */
-    public static String BlackBasiliskDesc;
-    public static String BlackBasiliskKickDamString;
-    public static String BlackBasiliskHeadbuttDamString;
+    public static String BlackBasiliskDesc = "This docile black basilisk looks happy as it sits ready to ride.";
+    public static String BlackBasiliskKickDamString = "wingbuff";
+    public static String BlackBasiliskHeadbuttDamString = "tailwhip";
 
-    public static int[] BlackBasiliskItemsButchered;
-    public static int[] BlackBasiliskCombatMoves;
-    public static int[] BlackBasiliskCreatureTypes;
+    public static int[] BlackBasiliskItemsButchered = new int[]{303,308,309,310,371,636};
+    public static int[] BlackBasiliskCombatMoves = new int[]{1,2,6};
+    public static int[] BlackBasiliskCreatureTypes = new int[]{0,3,4,9,12,14,27,30,32,41,43,62};
 
-    public static int BlackBasiliskMoveRate;
-    public static int BlackBasiliskMaxHuntRange;
-    public static int BlackBasiliskAggression;
-    public static int BlackBasiliskVision;
-    public static ArmourType BlackBasiliskArmourType;
-    public static int BlackBasiliskCombatDamageType;
-    public static int BlackBasiliskSizeX;
-    public static int BlackBasiliskSizeY;
-    public static int BlackBasiliskSizeZ;
-    public static int BlackBasiliskMaxPop;
-    public static int BlackBasiliskMaxAge = 750;
+    public static int BlackBasiliskMoveRate = 10;
+    public static int BlackBasiliskMaxHuntRange = 10;
+    public static int BlackBasiliskAggression = 0;
+    public static int BlackBasiliskVision = 10;
+    public static ArmourType BlackBasiliskArmourType = ARMOUR_TYPE_LEATHER_DRAGON;
+    public static int BlackBasiliskCombatDamageType = 2;
+    public static int BlackBasiliskSizeX = 60;
+    public static int BlackBasiliskSizeY = 60;
+    public static int BlackBasiliskSizeZ = 60;
+    public static int BlackBasiliskMaxPop = 30;
+    public static int BlackBasiliskMaxAge = 500;
 
     public static float BlackBasiliskSetMaxHeightDiff;
     public static float BlackBasiliskNaturalArmour;
@@ -400,7 +400,7 @@ public class Constants {
     public static float BlackBasiliskBiteDamage;
     public static float BlackBasiliskHeadDamage;
     public static float BlackBasiliskBreathDamage;
-    public static float BlackBasiliskZaxisOffset;
+    public static float BlackBasiliskZAxisOffset;
     public static float BlackBasiliskMoveSpeed;
     public static float BlackBasiliskBodyStrength;
     public static float BlackBasiliskBodyControl;
@@ -432,24 +432,24 @@ public class Constants {
      * Blue Basilisk
      */
     public static String BlueBasiliskDesc;
-    public static String BlueBasiliskKickDamString;
-    public static String BlueBasiliskHeadbuttDamString;
+    public static String BlueBasiliskKickDamString= "wingbuff";
+    public static String BlueBasiliskHeadbuttDamString = "tailwhip";
 
-    public static int[] BlueBasiliskItemsButchered;
-    public static int[] BlueBasiliskCombatMoves;
-    public static int[] BlueBasiliskCreatureTypes;
+    public static int[] BlueBasiliskItemsButchered = new int[]{303,308,309,310,371,636};
+    public static int[] BlueBasiliskCombatMoves = new int[]{1,2,6};
+    public static int[] BlueBasiliskCreatureTypes = new int[]{0,3,4,9,12,14,27,30,32,41,43,62};
 
-    public static int BlueBasiliskMoveRate;
-    public static int BlueBasiliskMaxHuntRange;
-    public static int BlueBasiliskAggression;
-    public static int BlueBasiliskVision;
-    public static ArmourType BlueBasiliskArmourType;
-    public static int BlueBasiliskCombatDamageType;
-    public static int BlueBasiliskSizeX;
-    public static int BlueBasiliskSizeY;
-    public static int BlueBasiliskSizeZ;
-    public static int BlueBasiliskMaxPop;
-    public static int BlueBasiliskMaxAge = 750;
+    public static int BlueBasiliskMoveRate = 10;
+    public static int BlueBasiliskMaxHuntRange = 10;
+    public static int BlueBasiliskAggression = 0;
+    public static int BlueBasiliskVision = 10;
+    public static ArmourType BlueBasiliskArmourType = ARMOUR_TYPE_LEATHER_DRAGON;
+    public static int BlueBasiliskCombatDamageType = 2;
+    public static int BlueBasiliskSizeX = 60;
+    public static int BlueBasiliskSizeY = 60;
+    public static int BlueBasiliskSizeZ = 60;
+    public static int BlueBasiliskMaxPop = 30;
+    public static int BlueBasiliskMaxAge = 500;
 
     public static float BlueBasiliskSetMaxHeightDiff;
     public static float BlueBasiliskNaturalArmour;
@@ -458,7 +458,7 @@ public class Constants {
     public static float BlueBasiliskBiteDamage;
     public static float BlueBasiliskHeadDamage;
     public static float BlueBasiliskBreathDamage;
-    public static float BlueBasiliskZaxisOffset;
+    public static float BlueBasiliskZAxisOffset;
     public static float BlueBasiliskMoveSpeed;
     public static float BlueBasiliskBodyStrength;
     public static float BlueBasiliskBodyControl;
@@ -490,25 +490,25 @@ public class Constants {
      * Ghost Basilisk
      */
     public static String GhostBasiliskDesc;
-    public static String GhostBasiliskKickDamString;
-    public static String GhostBasiliskHeadbuttDamString;
+    public static String GhostBasiliskKickDamString= "wingbuff";
+    public static String GhostBasiliskHeadbuttDamString = "tailwhip";
     public static String GhostBasiliskModelColor;
 
-    public static int[] GhostBasiliskItemsButchered;
-    public static int[] GhostBasiliskCombatMoves;
-    public static int[] GhostBasiliskCreatureTypes;
+    public static int[] GhostBasiliskItemsButchered = new int[]{303,308,309,310,371,636};
+    public static int[] GhostBasiliskCombatMoves = new int[]{1,2,6};
+    public static int[] GhostBasiliskCreatureTypes = new int[]{0,3,4,9,12,14,27,30,32,41,43,62};
 
-    public static int GhostBasiliskMoveRate;
-    public static int GhostBasiliskMaxHuntRange;
-    public static int GhostBasiliskAggression;
-    public static int GhostBasiliskVision;
-    public static ArmourType GhostBasiliskArmourType;
-    public static int GhostBasiliskCombatDamageType;
-    public static int GhostBasiliskSizeX;
-    public static int GhostBasiliskSizeY;
-    public static int GhostBasiliskSizeZ;
-    public static int GhostBasiliskMaxPop;
-    public static int GhostBasiliskMaxAge = 750;
+    public static int GhostBasiliskMoveRate = 10;
+    public static int GhostBasiliskMaxHuntRange = 10;
+    public static int GhostBasiliskAggression = 0;
+    public static int GhostBasiliskVision = 10;
+    public static ArmourType GhostBasiliskArmourType = ARMOUR_TYPE_LEATHER_DRAGON;
+    public static int GhostBasiliskCombatDamageType = 2;
+    public static int GhostBasiliskSizeX = 60;
+    public static int GhostBasiliskSizeY = 60;
+    public static int GhostBasiliskSizeZ = 60;
+    public static int GhostBasiliskMaxPop = 30;
+    public static int GhostBasiliskMaxAge = 500;
 
     public static float GhostBasiliskSetMaxHeightDiff;
     public static float GhostBasiliskNaturalArmour;
@@ -517,7 +517,7 @@ public class Constants {
     public static float GhostBasiliskBiteDamage;
     public static float GhostBasiliskHeadDamage;
     public static float GhostBasiliskBreathDamage;
-    public static float GhostBasiliskZaxisOffset;
+    public static float GhostBasiliskZAxisOffset;
     public static float GhostBasiliskMoveSpeed;
     public static float GhostBasiliskBodyStrength;
     public static float GhostBasiliskBodyControl;
@@ -549,24 +549,24 @@ public class Constants {
      * Green Basilisk
      */
     public static String GreenBasiliskDesc;
-    public static String GreenBasiliskKickDamString;
-    public static String GreenBasiliskHeadbuttDamString;
+    public static String GreenBasiliskKickDamString= "wingbuff";
+    public static String GreenBasiliskHeadbuttDamString = "tailwhip";
 
-    public static int[] GreenBasiliskItemsButchered;
-    public static int[] GreenBasiliskCombatMoves;
-    public static int[] GreenBasiliskCreatureTypes;
+    public static int[] GreenBasiliskItemsButchered = new int[]{303,308,309,310,371,636};
+    public static int[] GreenBasiliskCombatMoves = new int[]{1,2,6};
+    public static int[] GreenBasiliskCreatureTypes = new int[]{0,3,4,9,12,14,27,30,32,41,43,62};
 
-    public static int GreenBasiliskMoveRate;
-    public static int GreenBasiliskMaxHuntRange;
-    public static int GreenBasiliskAggression;
-    public static int GreenBasiliskVision;
-    public static ArmourType GreenBasiliskArmourType;
-    public static int GreenBasiliskCombatDamageType;
-    public static int GreenBasiliskSizeX;
-    public static int GreenBasiliskSizeY;
-    public static int GreenBasiliskSizeZ;
-    public static int GreenBasiliskMaxPop;
-    public static int GreenBasiliskMaxAge = 750;
+    public static int GreenBasiliskMoveRate = 10;
+    public static int GreenBasiliskMaxHuntRange = 10;
+    public static int GreenBasiliskAggression = 0;
+    public static int GreenBasiliskVision = 10;
+    public static ArmourType GreenBasiliskArmourType = ARMOUR_TYPE_LEATHER_DRAGON;
+    public static int GreenBasiliskCombatDamageType = 2;
+    public static int GreenBasiliskSizeX = 60;
+    public static int GreenBasiliskSizeY = 60;
+    public static int GreenBasiliskSizeZ = 60;
+    public static int GreenBasiliskMaxPop = 30;
+    public static int GreenBasiliskMaxAge = 500;
 
     public static float GreenBasiliskSetMaxHeightDiff;
     public static float GreenBasiliskNaturalArmour;
@@ -575,7 +575,7 @@ public class Constants {
     public static float GreenBasiliskBiteDamage;
     public static float GreenBasiliskHeadDamage;
     public static float GreenBasiliskBreathDamage;
-    public static float GreenBasiliskZaxisOffset;
+    public static float GreenBasiliskZAxisOffset;
     public static float GreenBasiliskMoveSpeed;
     public static float GreenBasiliskBodyStrength;
     public static float GreenBasiliskBodyControl;
@@ -607,24 +607,24 @@ public class Constants {
      * Red Basilisk
      */
     public static String RedBasiliskDesc;
-    public static String RedBasiliskKickDamString;
-    public static String RedBasiliskHeadbuttDamString;
+    public static String RedBasiliskKickDamString= "wingbuff";
+    public static String RedBasiliskHeadbuttDamString = "tailwhip";
 
-    public static int[] RedBasiliskItemsButchered;
-    public static int[] RedBasiliskCombatMoves;
-    public static int[] RedBasiliskCreatureTypes;
+    public static int[] RedBasiliskItemsButchered = new int[]{303,308,309,310,371,636};
+    public static int[] RedBasiliskCombatMoves = new int[]{1,2,6};
+    public static int[] RedBasiliskCreatureTypes = new int[]{0,3,4,9,12,14,27,30,32,41,43,62};
 
-    public static int RedBasiliskMoveRate;
-    public static int RedBasiliskMaxHuntRange;
-    public static int RedBasiliskAggression;
-    public static int RedBasiliskVision;
-    public static ArmourType RedBasiliskArmourType;
-    public static int RedBasiliskCombatDamageType;
-    public static int RedBasiliskSizeX;
-    public static int RedBasiliskSizeY;
-    public static int RedBasiliskSizeZ;
-    public static int RedBasiliskMaxPop;
-    public static int RedBasiliskMaxAge = 750;
+    public static int RedBasiliskMoveRate = 10;
+    public static int RedBasiliskMaxHuntRange = 10;
+    public static int RedBasiliskAggression = 0;
+    public static int RedBasiliskVision = 10;
+    public static ArmourType RedBasiliskArmourType = ARMOUR_TYPE_LEATHER_DRAGON;
+    public static int RedBasiliskCombatDamageType = 2;
+    public static int RedBasiliskSizeX = 60;
+    public static int RedBasiliskSizeY = 60;
+    public static int RedBasiliskSizeZ = 60;
+    public static int RedBasiliskMaxPop = 30;
+    public static int RedBasiliskMaxAge = 500;
 
     public static float RedBasiliskSetMaxHeightDiff;
     public static float RedBasiliskNaturalArmour;
@@ -633,7 +633,7 @@ public class Constants {
     public static float RedBasiliskBiteDamage;
     public static float RedBasiliskHeadDamage;
     public static float RedBasiliskBreathDamage;
-    public static float RedBasiliskZaxisOffset;
+    public static float RedBasiliskZAxisOffset;
     public static float RedBasiliskMoveSpeed;
     public static float RedBasiliskBodyStrength;
     public static float RedBasiliskBodyControl;
@@ -665,24 +665,24 @@ public class Constants {
      * White Basilisk
      */
     public static String WhiteBasiliskDesc;
-    public static String WhiteBasiliskKickDamString;
-    public static String WhiteBasiliskHeadbuttDamString;
+    public static String WhiteBasiliskKickDamString= "wingbuff";
+    public static String WhiteBasiliskHeadbuttDamString = "tailwhip";
 
-    public static int[] WhiteBasiliskItemsButchered;
-    public static int[] WhiteBasiliskCombatMoves;
-    public static int[] WhiteBasiliskCreatureTypes;
+    public static int[] WhiteBasiliskItemsButchered = new int[]{303,308,309,310,371,636};
+    public static int[] WhiteBasiliskCombatMoves = new int[]{1,2,6};
+    public static int[] WhiteBasiliskCreatureTypes = new int[]{0,3,4,9,12,14,27,30,32,41,43,62};
 
-    public static int WhiteBasiliskMoveRate;
-    public static int WhiteBasiliskMaxHuntRange;
-    public static int WhiteBasiliskAggression;
-    public static int WhiteBasiliskVision;
-    public static ArmourType WhiteBasiliskArmourType;
-    public static int WhiteBasiliskCombatDamageType;
-    public static int WhiteBasiliskSizeX;
-    public static int WhiteBasiliskSizeY;
-    public static int WhiteBasiliskSizeZ;
-    public static int WhiteBasiliskMaxPop;
-    public static int WhiteBasiliskMaxAge = 750;
+    public static int WhiteBasiliskMoveRate = 10;
+    public static int WhiteBasiliskMaxHuntRange = 10;
+    public static int WhiteBasiliskAggression = 0;
+    public static int WhiteBasiliskVision = 10;
+    public static ArmourType WhiteBasiliskArmourType = ARMOUR_TYPE_LEATHER_DRAGON;
+    public static int WhiteBasiliskCombatDamageType = 2;
+    public static int WhiteBasiliskSizeX = 60;
+    public static int WhiteBasiliskSizeY = 60;
+    public static int WhiteBasiliskSizeZ = 60;
+    public static int WhiteBasiliskMaxPop = 30;
+    public static int WhiteBasiliskMaxAge = 500;
 
     public static float WhiteBasiliskSetMaxHeightDiff;
     public static float WhiteBasiliskNaturalArmour;
@@ -691,7 +691,7 @@ public class Constants {
     public static float WhiteBasiliskBiteDamage;
     public static float WhiteBasiliskHeadDamage;
     public static float WhiteBasiliskBreathDamage;
-    public static float WhiteBasiliskZaxisOffset;
+    public static float WhiteBasiliskZAxisOffset;
     public static float WhiteBasiliskMoveSpeed;
     public static float WhiteBasiliskBodyStrength;
     public static float WhiteBasiliskBodyControl;
@@ -720,6 +720,4 @@ public class Constants {
     public static boolean WhiteBasiliskSpawnCave = false;
     public static boolean WhiteBasiliskSpawnPeat = false;
 
-    public Constants() {
-    }
 }
