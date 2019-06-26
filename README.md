@@ -11,6 +11,14 @@
 - No additional mods required on server or client side! 
 - Make sure you have the latest version of [ago's server modloader](https://github.com/ago1024/WurmServerModLauncher/releases/latest).
 
+**Version 1.6**
+
+- Added new ridable dragons called Basilisks.
+
+**Version 1.5**
+
+- Added Gradle build script to automate mod setup for developers
+
 **Version 1.4**
 
 - Fixed CreatureTypes import from 1.6.3.2 update
